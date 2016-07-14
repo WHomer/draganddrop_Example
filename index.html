@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" hreflang="en">
+  <title>Homer Week2</title>
+</head>
+<body>
+
+
+  <header>
+    <h1>World of Products</h1>
+  </header>
+
+	<nav id="menu">
+			<a class="selected" href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="support.html">Support</a>
+			<a href="faqs.html">FAQs</a>
+			<a href="events.html">Events</a>
+	</nav>
+  <section id="main">
+    <h2>Please sort your favorite presidents in order</h2>
+
+    <!--Favorite Presidents-->
+    <h3>These are your Favorite Presidents, Move your favorites here!</h3>
+    <div class="presidentContainer" id="mostFavoritePresidents" ondrop="dropIt(this, event)" ondragenter="return false" ondragover="return false">
+      <span draggable="true" id="abraham_lincoln" ondragstart="dragIt(this, event)">
+        <img src="img/abraham_lincoln.jpg" alt="Abraham Lincoln">
+      </span>
+      <span draggable="true" id="franklin_rossevelt" ondragstart="dragIt(this, event)">
+        <img src="img/franklin_rossevelt.jpg" alt="Franklin Rossevelt">
+      </span>
+      <span draggable="true" id="george_washington" ondragstart="dragIt(this, event)">
+        <img src="img/george_washington.jpg" alt="George Washington">
+      </span>
+      <span draggable="true" id="harry_truman" ondragstart="dragIt(this, event)">
+        <img src="img/harry_truman.jpg" alt="Harry Truman">
+      </span>
+    </div>
+    <br>
+    <!--Least Favorite Presidents-->
+    <h3>These are your least Favorite Presidents, Move your least favorites here!</h3>
+    <div class="presidentContainer" id="leastFavoritePresidents" ondrop="dropIt(this, event)" ondragenter="return false" ondragover="return false">
+      <span draggable="true" id="barack_obama" ondragstart="dragIt(this, event)">
+        <img src="img/barack_obama.jpg" alt="Barack Obama">
+      </span>
+      <span draggable="true" id="john_kennedy" ondragstart="dragIt(this, event)">
+        <img src="img/john_kennedy.jpg" alt="John Kennedy">
+      </span>
+      <span draggable="true" id="richard_nixon" ondragstart="dragIt(this, event)">
+        <img src="img/richard_nixon.jpg" alt="Richard Nixon">
+      </span>
+      <span draggable="true" id="theodore_roosevelt" ondragstart="dragIt(this, event)">
+        <img src="img/theodore_roosevelt.jpg" alt="Theodore Roosevelt">
+      </span>
+    </div>
+    <br>
+    <!--Favorite Presidents-->
+    <h3>These presidents are garbage, Drag them to the Trash</h3>
+    <div id="trashPresidents" ondrop="dropIt(this, event)" ondragenter="return false" ondragover="return false">
+      <span id="bucket3" ondragenter="return false" ondragover="return false" ondrop="trashIt(this, event)">
+        <img src="img/trashbini-2.jpg" alt="Trash Can" width="150" height="150" draggable="false">
+      </span>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>Copyright 2016</p>
+  </footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
